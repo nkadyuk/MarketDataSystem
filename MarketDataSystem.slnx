@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="MarketData.App/MarketData.App.csproj" />
+  <Project Path="MarketData.Core/MarketData.Core.csproj" />
+  <Project Path="MarketData.Infrastructure/MarketData.Infrastructure.csproj" />
+  <Project Path="MarketData.Processing/MarketData.Processing.csproj" />
+  <Project Path="MarketData.Server/MarketData.Server.csproj" Id="676d1fb6-6570-4277-80ff-4baceadb66b5" />
+  <Project Path="MarketData.Tests/MarketData.Tests.csproj" Id="a8ea0364-ae5e-456c-b3eb-73edc5aad0d2" />
+</Solution>

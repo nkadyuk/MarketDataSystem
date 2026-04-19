@@ -1,41 +1,52 @@
-# Prerequisites
-*.d
+## [ Обработка результатов сборки ]
+bin/
+obj/
+publish/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+## [ Локальные настройки и кэш IDE ]
+.vs/
+.vscode/
+*.user
+*.userosscache
+*.sln.docstates
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.patch
+*.diff
 
-# Precompiled Headers
-*.gch
-*.pch
+## [ Пакеты NuGet ]
+# Игнорируем саму папку пакетов, так как они восстанавливаются автоматически
+packages/
+# Но разрешаем файлы конфигурации пакетов
+!packages/build/
+*.nupkg
 
-# Linker files
-*.ilk
+## [ Тесты и покрытие ]
+TestResults/
+*.sequenced
+*.coverage
+*.trx
 
-# Debugger Files
-*.pdb
+## [ Логи и временные файлы ]
+*.log
+logs/
+_output/
+*.tmp
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+## [ Специфично для базы данных (если SQL LocalDB) ]
+*.mdf
+*.ldf
 
-# Fortran module files
-*.mod
-*.smod
+## [ Секреты и конфигурация пользователя ]
+# Обязательно игнорируй секреты, чтобы не "слить" пароли от БД в Git
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+.env
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# debug information files
-*.dwo
+## [ Файлы ОС ]
+.DS_Store
+Thumbs.db
